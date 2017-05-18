@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form role="form" id="eqipForm">
+            <div class="modal-header">
+                <div class="modal-title">设备信息</div>
+            </div>
+            <div class="modal-body">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="eqipId">设备编号</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" id="eqipId" ng-model="eqip.eqipId">
+                        </div>
+                        <label class="col-md-2 control-label" for="eqipName">设备名</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" id="eqipName" ng-model="eqip.eqipName">
+                        </div>
+                        <label class="col-md-2 control-label" for="color">颜色</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" ng-model="eqip.color">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="size">尺寸</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" id="size" ng-model="eqip.size">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" ng-click="ok()">保存</button>
+                <button class="btn btn-default" ng-click="cancel()">取消</button>
+            </div>
+        </form>
+    </body>
+</html>
